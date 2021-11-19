@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(81, 138, 223);
+  font-family: Verdana;
+  font-size: 100%;
+  color: rgb(254, 254, 255);
+}
+.container {
+  width: 1200px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 20px;
+}
+nav {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(10, 3, 104);
+  box-sizing: border-box;
+  padding: 25px;
+  float: left;
+}
+section {
+  background-color: rgb(10, 3, 104);
+  color: rgb(254, 254, 255);
+  width: 870px;
+  height: 500px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+}
+ul.menu {
+  list-style-type: none;
+}
+ul.menu li {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  background-color: rgb(81, 138, 223);
+  margin-top: 10px;
+  cursor: pointer;
+}
+ul.menu li:hover {
+  background-color: rgb(255, 255, 255);
+}
+.btn {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #bbb;
+}
+.salvar {
+  background-image: url(../_img/icone-salvar.png);
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 20px;
+  background-color: rgb(92, 185, 68);
+  color: #fff;
+  cursor: pointer;
+}
+.limpar {
+  background-image: url(../_img/icone-desfazer.png);
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 20px;
+  background-color: rgb(179, 168, 71);
+  color: #fff;
+  cursor: pointer;
+}
+.search {
+  background-image: url(../_img/icone-search.png);
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 20px;
+  background-color: rgb(110, 66, 66);
+  color: #fff;
+  cursor: pointer;
+}
+.campo {
+  width: 200px;
+  height: 30px;
+  border-radius: 3px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+}
