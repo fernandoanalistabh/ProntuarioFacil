@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulários</title>
+        <link rel="stylesheet" href="_css/estilo.css">
+    </head>
+    <body>
+        <section>
+
+            <form method="post" action="">
+                <fieldset>
+                    <legend>Preencha um dos dados abaixo para localizar o paciente</legend>
+
+                    <label for="numerodosus">Número do SUS</label><br>
+                    <input class="campos" type="number" id="numerodosus" maxlength="15" name="numerodosus" required autofocus><br>
+
+                    <label for="nomedopaciente">Nome do paciente</label><br>
+                    <input class="campos" type="text" id="nomedopaciente" maxlength="50" name="nomedopaciente"><br>
+
+                    <input type="submit" value="Localizar">
+                    <input type="reset" value="Limpar Dados">
+
+                </fieldset>
+            </form>
+        </section>
+    </body> 
+</html>

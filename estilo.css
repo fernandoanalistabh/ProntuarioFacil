@@ -1,0 +1,26 @@
+body {
+    background-color: #70ADA2;
+    font-family: Verdana;
+    font-size: 95%;
+}
+
+section {
+    width: 960px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+fieldset {
+    width: 700px;
+    margin: auto;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+}
+.campos {
+    width: 250px;
+    height: 30 px;
+    order: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 5px;
+}
