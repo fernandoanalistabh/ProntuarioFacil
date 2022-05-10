@@ -1,29 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<html>
+    <head>
+        <title>Tela de Login</title>
+    <head>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        body{background-color: #70ADA2;
+        }
+
+        form{
+            background-color: white;
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        form h3{
+            text-align: center;
+            color:#19806d;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        form input[type=text],
+        form input[type=password]{
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        form input[type=submit]{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background-color:#70ADA2;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+        }
+
+        form input[type=submit]:hover{
+            background-color: #19806d;
+            transition: 1s;
+        }
+        form input[type=text]:focus{
+            outline: 0;
+        }
+        form input[type=password]:focus{
+            outline: 0;
+        }
+            
+    </style>
 <body>
-    <div id="login-container">
-        <h1>Pront</h1>
-        <h1>Fácil</h1>
-        <h1>_________________________</h1>
-        <h1>Login</h1>
-        <form action="">
-            <label for="crm">Número do CRM</label>
-            <input type="crm" name="crm" id="crm" placeholder="Digite o seu CRM" autocomplete="off">
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha">
-            <input type="submit"  value="Entrar">
-        </form>
-        <div id="register-container">
-            <p>Ainda não tem conta?</p>
-            <a href="/index2.             html">Cadastre-se</a>
-        </div>
-    </div>
+    <form>
+        <h3>Login</h3>
+        <input id="email" type="text" name="email" placeholder="Seu e-mail..."/>
+        <input id="password" type="Password" name="senha" placeholder="Sua senha..."/>
+        <input type="Submit" name="acao" value="Enviar"/>
+    </form>
+    <script>
+        var email = document.getElementById('email');
+
+        email.addEventListener('focus',()=>{
+                email.style.borderColor= "#19806d";
+        });
+        email.addEventListener('blur',()=>{
+                email.style.borderColor= "#ccc";
+            });
+        var password = document.getElementById('password');
+
+        password.addEventListener('focus',()=>{
+                password.style.borderColor= "#19806d";
+        });
+        password.addEventListener('blur',()=>{
+                password.style.borderColor= "#ccc";
+            });
+    </script>
 </body>
+
 </html>
